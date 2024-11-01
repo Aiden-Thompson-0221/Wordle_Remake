@@ -169,17 +169,17 @@ Throughout the game, you will need to print each letter in a specific color and 
      coloring.green(letter)
   
   Now, how can we iterate through each letter in a guess and apply the appropriate color?
+  
   def colored_word(letter):
+  
       for word in letter:
           match word:  
               Case “green”:
                     print(“Its green)
               Case “yellow”:
                     print(“Its yellow)
-  
-                   Case “Grey”:
-                         print(“nah”)
-  
+              Case “Grey”:
+                    print(“nah”)
       return none
   
   Role C: Handshake Rockstar
@@ -197,10 +197,10 @@ For this assignment, we’ve prepared a dictionary (file) of valid secret words 
 So far, we have a solid plan for how to deal with one guess. But now we want the user to keep making guesses until they win (the user guesses the answer) or they lose (the user runs out of their 6 guesses).
 
   How do we check if the user should keep guessing?
+  
   def has_won(num_guesses, user_input):  *NOTE : SHOULD INVOLVE A BOOLEAN 
       if user_input == secret_word:
           print(‘Congrats’) Return TRUE
-  
       Elif num_guesses == 6 and user_input != secret_word:
          print(‘Game over’) RETURN TRUE 
       Else:
@@ -237,9 +237,10 @@ After each game ends we’ll want to let the user know if they won or lost.
   
   if input == ‘Yes’ or input == ‘yes’:
       Restart the Game
-  Elif input == ‘no’ or input == ‘No’: 
+  elif input == ‘no’ or input == ‘No’: 
       End the game. Stop!
-  Else print(input(‘Please enter yes or no.’ ))
+  else:
+      print(input(‘Please enter yes or no.’ ))
 
 13. Putting it All Together
 Write some pseudocode that outlines what your project will look like. Remember, you have the following main components:

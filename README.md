@@ -1,5 +1,8 @@
 # Wordle_Remake
 
+Description:
+This Python code is a recreation of the popular game Wordle. In this game, the player has six attempts to guess a secret five-letter word. With each guess, feedback is provided to show which letters are correct and in the correct position, which letters are correct but in the wrong position, and which letters are not in the word at all. The code includes logic to validate guesses, check for win/loss conditions, and display color-coded feedback after each guess. The game continues until the player correctly guesses the word or exhausts all attempts. The game keeps track of the users record and displays final record at the end of play.
+
 Phase I
 1. Assign Roles
 There are three roles that need to be determined among the team:
